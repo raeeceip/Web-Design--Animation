@@ -57,23 +57,25 @@ li {
 main {
 	display: inline-block;
 	justify-self: center;
-	align-items: right;
+	align-items: center;
 	width: 100%;
+	bottom: 0px;
 }
+
 .paragraph {
 	text-align: center;
 	width: 60%;
-	margin: 20px 20px 10px 20%;
+	margin: 20px 20px 0px 20%;
 	visibility: hidden;
 	animation: move-down 1s ease-in-out;
 	animation-fill-mode: forwards;
+	bottom: 0;
 }
 .images {
-	display: flex;
+	display: inline-flex;
 	align-items: baseline;
 	gap: 10px;
 	width: 100%;
-	animation: move-up 1s ease-in-out;
 }
 @keyframes move-up {
 	0% {
@@ -86,12 +88,14 @@ main {
 	}
 }
 .images img {
-	width: 20%;
-	height: 100%;
+	float: right;
+	width: 100%;
+
+	animation: move-up 1s ease-in-out;
 }
 
 #image1 {
-	height: 400px;
+	height: 450px;
 }
 #image2 {
 	height: 300px;
@@ -103,5 +107,5 @@ main {
 	height: 300px;
 }
 #image5 {
-	height: 400px;
+	height: 450px;
 }
